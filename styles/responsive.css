@@ -1,0 +1,669 @@
+/*Small devices only - (Potrait phones)*/
+
+/*Assumed smallest device is 480px for mobile devices (approximate) (480-599)*/
+
+@media screen and (max-width: 767px) {
+    /*Home page*/
+    *:not(h1, h2, h3, h4, h5, h6) {
+        font: 1rem "Nunito Sans", sans-serif;
+        color: white;
+    }
+    #logo {
+        min-width: 15rem;
+        min-height:3rem;
+        margin-top: 2rem;
+    }
+    #navMenu {
+        flex-direction: column;
+    }
+    #menu {
+        margin: 2rem 0 0 1rem;
+        padding: 0;
+    }
+    nav a {
+        font-size: 0.95rem;
+        padding-right: 0.95rem;
+    }
+    #current {
+        text-underline-offset: 0.5rem;
+    }
+    .ctaButton {
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+        padding: 0.4rem 7rem 0.4rem 7rem;
+    }
+    #ctaButton2 {
+        padding: 0.4rem 4rem 0.4rem 4rem;
+        width: 45%;
+    }
+    #ctaLabelContainer {
+        margin-top: 4rem;
+        padding: 0.5rem 0rem 0.5rem 1rem;
+    }
+    #slogan1, #slogan2 {
+        font-size: 3.5rem;
+    }
+    #ctaLabel {
+        font-size: 0.95rem;
+    }
+    #desc {
+        width: 65%;
+        text-align: justify;
+    }
+    #statsContainer {
+        width: 20rem;
+    }
+    .stat {
+        font-size: 1.25rem;
+    }
+    #statsCaptionsContainer {
+        width: 85%;
+    }
+    #statCaption1, #statCaption2, #statCaption3 {
+        font-size: 0.7rem;
+    }
+    #statCaption1 {
+        margin-right: 2.4rem;
+    }
+    #statCaption2 {
+        margin-right: 3.4rem;
+    }
+    #ctaButton2 {
+        margin-bottom: 2rem;
+    }
+    #homeBody {
+        background-position-x: 6.5rem;
+	    background-position-y: 38rem;
+        background-size: 90%;
+    }
+    #homeBody footer {
+        margin-top: 15rem;
+        margin-bottom: 0;
+    }
+
+    /*Product page*/
+    #membershipsContainer {
+        flex-direction: column;
+    }
+    .testimonial {
+        font-size: 1.25rem;
+    }
+    #testimonials {
+        width: 75%;
+        margin-bottom: 5rem;
+    }
+    .mdi-format-quote-open, .mdi-format-quote-close {
+        font-size: 1.5rem;
+    }
+    .membershipOptionContainer {
+        width:350%;
+        margin-left: 2.5rem;
+    }
+    .planName {
+        font-size: 1.75rem;
+    }
+    #basicMembership {
+        margin-top: 34rem;
+        height: 35rem;
+        margin-bottom: 6rem;
+    }
+    #premiumMembership {
+        background-color: #C1E62E;
+    }
+    #premiumMembership, #eliteMembership {
+        height: 40rem;
+    }
+    #eliteMembership {
+        margin-top: 4rem;
+        margin-bottom: -30rem;
+    }
+    #testimonialHeader {
+        font-size: 2rem;
+    }
+    .featureDesc {
+        font-size: 0.85rem;
+    }
+    #basicImgContainer {
+        margin: 0;
+    }
+    #basicImg {
+        width: 83%;
+        margin-left: 3rem;
+    }
+    .topDesc {
+        flex-direction: column;
+        margin-top: 35rem;
+        align-items: center;
+    }
+    .descContainer {
+        margin-top: -4rem;
+        margin-left: 3rem;
+        padding-right: 2.2rem;
+    }
+    .productHeaderContainer {
+        margin-left: -2rem;
+        margin-top: -1rem;
+    }
+    h1, .optionalHeader {
+        font-size: 2.25rem;
+    }
+    .membershipSubheaderDesc {
+        font-size: 1.2rem;
+    }
+    #basicFeaturesContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -2.75rem;
+    }
+    .featuresContainer {
+        width: 100%;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    .featureName {
+        font-size: 1.5rem;
+    }
+    #fitnessClassesTable th, #fitnessClassesTable td {
+        font-size: 0.75rem;
+    }
+    #classBasicFeat {
+        margin-left: 1.5rem;
+        width: 90%;
+    }
+    #fitnessClassesContainer {
+        padding: 0 1rem 0 1rem;
+    }
+    .references {
+        margin-left: 2rem;
+    }
+    #premiumImgContainer {
+        margin-top: -63rem;
+    }
+    #premiumImg {
+        width: 105%;
+        margin-left: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    #premiumDescContainer {
+        margin-top: -20rem;
+        margin-bottom: 20rem;
+        padding: 0 2.6rem 0 3rem;
+    }
+    .productHeaderContainer2 {
+        margin-left: -2rem;
+        margin-top: 17rem;
+    }
+    .notice {
+        font-size: small;
+    }
+    .membershipSubcontainer1, .membershipSubcontainer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .membershipSubcontainer1, .membershipSubcontainer2 {
+        margin-bottom: -3rem;
+    }
+    #eliteImg {
+        width: 107%;
+        margin-left: -2rem;
+    }
+    #eliteImgContainer {
+        margin-top: -29rem;
+    }
+    #eliteDescContainer {
+        margin-top: -10rem;
+    }
+    .productHeaderContainer3 {
+        margin-left: -2rem;
+        margin-top: -1rem;
+    }
+    .trainersProfiles {
+        width: 80%;
+        margin-left: 2rem;
+    }
+    .trainers, .trainersContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trainers {
+        margin-bottom: 3rem;
+    }
+    .trainersContainer {
+        width: 80%;
+        margin-bottom: -0.5rem;
+    }
+    .trainerImg {
+        width: 90%;
+    }
+    .footerLogo {
+        width: 1rem;
+    }
+
+    /*Enquiry page*/
+    .enquiryContainer {
+        margin-top: 3rem;
+        width: 70%;
+    }
+    #topContainer {
+        flex-direction: column;
+        /*align-items: center;*/
+    }
+    #formHeader {
+        font-size: 2rem;
+    }
+    #firstFieldset {
+        width: 75%;
+        margin-top: 5rem;
+        margin-left: 0.5rem;
+    }
+    #secondFieldset {
+        width: 77%;
+        margin-top: 1.25rem;
+        margin-left: -0.25rem;
+    }
+    form legend {
+        font-size: 1.5rem;
+    }
+    #enquirySect {
+        margin-top: -2rem;
+        margin-left: 1.1rem;
+        width: 90%;
+    }
+    #enquiryDesc {
+        width: 100%;
+        height: 15rem;
+    }
+    #enquiryFieldset {
+        width: 85%;
+        margin-left: -1.5rem;
+    }
+    form select {
+        width: 100%;
+        color: black;
+    }
+    #enquiryFieldset textarea {
+        color: black;
+    }
+    #checkSect {
+        flex-direction: column;
+        gap: 0;
+    }
+    #submit {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    /*About page*/
+    #aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    dl {
+        width: 80%;
+    }
+    #myPhoto {
+        float: none;
+        margin-left: 5rem;
+    }
+    #demoInfo {
+        margin-top: 0rem;
+        margin-left: 3rem;
+        width: 80%;
+    }
+    #aboutHeader {
+        font-size: 2.25rem;
+        margin-left: 2.8rem;
+        margin-top: 4rem;
+    }
+    #timetable th, #timetable td {
+        font-size: 0.5rem;
+        padding: 0.1rem;
+    }
+    #timetableContainer {
+        width: 100%;
+        height: 26.5rem;
+    }
+    .aboutSubheader {
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
+    .details {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+}
+
+/*Medium devices - (portrait tablets)*/
+
+@media screen and (min-width: 768px) {
+    /*Home page*/
+    *:not(h1, h2, h3, h4, h5, h6) {
+        font: 1.15rem "Nunito Sans", sans-serif;
+        color: white;
+    }
+    #logo {
+        min-width: 15rem;
+        min-height:3rem;
+        margin-top: 2rem;
+    }
+    #navMenu {
+        flex-direction: column;
+    }
+    #menu {
+        margin: 2rem 0 0 1rem;
+        padding: 0;
+    }
+    nav a {
+        font-size: 0.95rem;
+        padding-right: 0.95rem;
+    }
+    #current {
+        text-underline-offset: 0.5rem;
+    }
+    .ctaButton {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        width: 20rem;
+        font-size: 1rem;
+    }#ctaLabelContainer {
+        margin-top: 4rem;
+        padding: 0.75rem 0rem 0.75rem 1.25rem;
+    }
+    #slogan1, #slogan2 {
+        font-size: 4rem;
+    }
+    #ctaLabel {
+        font-size: 0.95rem;
+    }
+    #desc {
+        width: 58%;
+        text-align: justify;
+    }
+    #statsContainer {
+        width: 67%;
+    }
+    .stat {
+        font-size: 2rem;
+    }
+    #statsCaptionsContainer {
+        width: 85%;
+    }
+    #statCaption1, #statCaption2, #statCaption3 {
+        font-size: 0.9rem;
+    }
+    #statCaption1 {
+        margin-right: 2.8rem;
+    }
+    #statCaption2 {
+        margin-right: 4rem;
+    }
+    #ctaButton2 {
+        margin-bottom: 2rem;
+        width: 35%;
+    }
+    #homeBody {
+        background-position-x: 14.5rem;
+	    background-position-y: 40rem;
+        background-size: 76%;
+    }
+    #homeBody footer {
+        margin-top: 15rem;
+        margin-bottom: 0;
+    }
+
+    /*Product page*/
+    #membershipsContainer {
+        flex-direction: column;
+    }
+    .testimonial {
+        font-size: 1.25rem;
+    }
+    #testimonials {
+        width: 75%;
+        margin-bottom: 5rem;
+    }
+    .mdi-format-quote-open, .mdi-format-quote-close {
+        font-size: 1.5rem;
+    }
+    .membershipOptionContainer {
+        width:300%;
+        margin-left: 5rem;
+    }
+    .planName {
+        font-size: 2rem;
+    }
+    #basicMembership {
+        margin-top: 30rem;
+        height: 35rem;
+        margin-bottom: 6rem;
+    }
+    #premiumMembership {
+        background-color: #C1E62E;
+    }
+    #premiumMembership, #eliteMembership {
+        height: 40rem;
+    }
+    #eliteMembership {
+        margin-top: 4rem;
+        margin-bottom: -30rem;
+    }
+    #testimonialHeader {
+        font-size: 2rem;
+    }
+    .featureDesc {
+        font-size: 0.95rem;
+    }
+    #basicImgContainer {
+        margin: 0;
+    }
+    #basicImg {
+        width: 108%;
+        margin-left: -1rem;
+    }
+    .topDesc {
+        flex-direction: column;
+        margin-top: 35rem;
+        align-items: center;
+    }
+    .descContainer {
+        margin-top: -2rem;
+        margin-left: 3rem;
+        padding-right: 2.2rem;
+    }
+    .productHeaderContainer {
+        margin-left: -2rem;
+        margin-top: -1rem;
+    }
+    h1, .optionalHeader {
+        font-size: 2.25rem;
+    }
+    .membershipSubheaderDesc {
+        font-size: 1.2rem;
+    }
+    #basicFeaturesContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -2.75rem;
+    }
+    .featuresContainer {
+        width: 100%;
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+    .featureName {
+        font-size: 1.75rem;
+    }
+    #fitnessClassesTable th, #fitnessClassesTable td {
+        font-size: 0.75rem;
+    }
+    #classBasicFeat {
+        margin-left: 1.5rem;
+        width: 90%;
+    }
+    #fitnessClassesContainer {
+        padding: 0 1rem 0 1rem;
+    }
+    .references {
+        margin-left: 2rem;
+    }
+    #premiumImgContainer {
+        margin-top: -66rem;
+    }
+    #premiumImg {
+        width: 103%;
+        margin-left: 1rem;
+    }
+    #premiumDescContainer {
+        margin-top: -8rem;
+        margin-bottom: 20rem;
+        padding: 0 2.6rem 0 3rem;
+    }
+    #premiumHeaderDesc {
+        margin-top: 0;
+    }
+    .productHeaderContainer2 {
+        margin-left: -2rem;
+        margin-top: 17rem;
+    }
+    .notice {
+        font-size: small;
+    }
+    .membershipSubcontainer1, .membershipSubcontainer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .membershipSubcontainer1, .membershipSubcontainer2 {
+        margin-bottom: -3rem;
+    }
+    #eliteImg {
+        width: 107%;
+        margin-left: -2rem;
+    }
+    #eliteImgContainer {
+        margin-top: -29rem;
+    }
+    #eliteDescContainer {
+        margin-top: -9rem;
+    }
+    .productHeaderContainer3 {
+        margin-left: -2rem;
+        margin-top: -1rem;
+    }
+    .trainersProfiles {
+        width: 80%;
+        margin-left: 3rem;
+    }
+    .trainers, .trainersContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trainers {
+        margin-bottom: 3rem;
+    }
+    .trainersContainer {
+        width: 80%;
+        margin-bottom: -0.5rem;
+    }
+    .trainerImg {
+        width: 90%;
+    }
+    .footerLogo {
+        width: 1rem;
+    }
+
+    /*Enquiry page*/
+    .enquiryContainer {
+        margin-top: 3rem;
+        width: 70%;
+    }
+    #topContainer {
+        flex-direction: column;
+    }
+    #formHeader {
+        font-size: 2.25rem;
+    }
+    #firstFieldset {
+        width: 75%;
+        margin-top: 5rem;
+        margin-left: 2.55rem;
+    }
+    #secondFieldset {
+        width: 77%;
+        margin-top: 1.25rem;
+        margin-left: 1.75rem;
+    }
+    form legend {
+        font-size: 1.75rem;
+    }
+    #enquirySect {
+        margin-top: -2rem;
+        margin-left: 3.4rem;
+        width: 90%;
+    }
+    #enquiryDesc {
+        width: 100%;
+        height: 15rem;
+    }
+    #enquiryFieldset {
+        width: 86%;
+        margin-left: -1.5rem;
+    }
+    form select {
+        width: 100%;
+        color: black;
+    }
+    #enquiryFieldset textarea {
+        color: black;
+    }
+    #checkSect {
+        flex-direction: column;
+        gap: 0;
+    }
+    #submit {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    /*About page*/
+    #aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    dl {
+        width: 80%;
+    }
+    #myPhoto {
+        float: none;
+        margin-left: 8rem;
+    }
+    #demoInfo {
+        margin-top: 2rem;
+        margin-left: 4rem;
+        width: 80%;
+    }
+    #aboutHeader {
+        font-size: 2.5rem;
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+    #timetable th, #timetable td {
+        font-size: 0.5rem;
+        padding: 0.1rem;
+    }
+    #timetableContainer {
+        width: 100%;
+        height: 26rem;
+    }
+    .aboutSubheader {
+        margin-left: 4rem;
+        font-size: 2.25rem;
+        margin-bottom: 0rem;
+    }
+    .details {
+        font-size: 1rem;
+        width: 90%;
+    }
+}

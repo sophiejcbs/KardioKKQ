@@ -1,0 +1,1507 @@
+/*
+filename: style.css
+author: Sophie Nadine Jacobs
+created: 17/4/2023
+last modified: 21/5/2023
+description: about.html, enhancements.html, enquire.html, index.html, product.html
+purpose: to add style and design to the files in the description
+*/
+
+/*Set default font and color*/
+*:not(h1, h2, h3, h4, h5, h6) {
+	font: 1.05rem "Nunito Sans", sans-serif;
+	color: white;
+}
+
+h1 {
+	font: 2.75rem 'Bebas Neue', serif; /* product.html css requirement */
+	color: white;
+}
+
+/* Set bg color of whole website, remove default margin */
+body {
+	background-color:#0E0F0F;
+	margin: 0;
+}
+
+/*footer is already full page width, width: 100% is beyond the page width for footer*/
+footer {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	background-color: #36400D;
+	margin-top: 2rem;
+	padding: 1rem;
+	margin-bottom: -2rem;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer, footer a, footer p {
+	font-size: small;
+}
+
+/* Navigation menu */
+
+/* make all elements display in same line, and space each element in the container */
+#navMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #0E0F0F; /*#004CA8 #001733*/
+	width: 100%;
+}
+
+#logo {
+	width: 13rem;
+	height: 2.75rem;
+	margin-left: 1.75rem;
+}
+
+#menu {
+	padding: 2.5rem 0rem 2.5rem 0rem;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding-right: 2.5rem;
+	text-align: center;
+	font-size: 1rem;
+}
+
+nav a:hover {
+	color: #D6FF33;
+}
+
+/*adds line under current selected page on navigation menu*/
+.current {
+	text-decoration: underline;
+	text-decoration-color: #D6FF33;
+	text-underline-offset: 0.7rem;
+}
+
+.ctaButton, .membershipMoreBtn  {
+	padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+	border-radius: 1rem;
+	cursor:pointer;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+.logOutBtn {
+	text-align: right;
+	margin-right: -7rem;
+	margin-top: -2rem;
+}
+
+#allOrders {
+	margin-left: 5.5rem;
+}
+
+#pendingOrders {
+	margin-right: 6rem;
+}
+
+.logOutBtn a {
+	font-size: 1.25rem;
+}
+
+#ctaButton1  {
+	background-color: white;
+	border: 1px solid black;
+	margin-right: 2rem;
+}
+
+#ctaButton1:hover {
+	background-color: gray;
+}
+
+/* Home page */
+
+/*add bg graphic for body of the home page*/
+#homeBody {
+	background-image: url("images/bgMuscles.png"); /*Source: https://unsplash.com/photos/7kEpUPB8vNk*/
+	background-repeat: no-repeat;
+	background-position-x: 110%;
+	background-position-y: 3.9rem;
+	background-size: 63%;
+}
+
+#slogan1, #slogan2 {
+	font-size: 5rem;
+	padding-left: 4rem;
+	font-weight: bold;
+}
+
+#slogan1 {
+	margin-top: 4.75rem;
+	margin-bottom: -1.5rem;
+}
+
+#slogan2 {
+	margin: 0;
+	color: white;
+}
+
+#ctaButton2 {
+	background-color: #D6FF33;
+	border: 1px solid #667D0C;
+	margin-left: 4rem;
+	padding: 0.6rem 4rem 0.6rem 4rem;
+}
+
+#ctaButton2:hover {
+	background-color: #6E8A00;
+}
+
+#ctaBtnContainer {
+	width: 20rem;
+	margin-top: 2.5rem;
+}
+
+#ctaLabelContainer {
+	padding: 0.75rem 1rem 0.75rem 1rem;
+	margin: 0.7rem 0rem -4rem 3.5rem;
+	background-color: #373C42; /*#7400B3*/
+	width: 14rem;
+	border-radius: 1.5rem;
+}
+
+#ctaLabel {
+	margin: 0;
+}
+
+#desc {
+	margin-left: 4rem;
+	margin-top: 0;
+	width: 28rem;
+	text-align: justify;
+}
+
+#statAndCaptionContainer {
+	margin-top: 0rem;
+}
+
+#statsContainer, #statsCaptionsContainer {
+	margin-left: 4rem;
+	display: flex;
+}
+
+#statsContainer {
+	width: 23rem;
+	justify-content: space-between;
+}
+
+#statsCaptionsContainer {
+	width: 90%;
+}
+
+.stat {
+	margin-bottom: -0.75rem;
+}
+
+#statCaption1, #statCaption2, #statCaption3 {
+	font-size: 0.8rem;
+	opacity: 0.8;
+}
+
+#statCaption1 {
+	margin-right: 2.75rem;
+}
+
+#statCaption2 {
+	margin-right: 3.75rem;
+}
+
+/* Membership page */
+
+/*section containing the 3 membership cards (card = squares on Membership page)*/
+#membershipsContainer {
+	display: flex;
+	justify-content:space-evenly;
+	margin-top: 5rem;
+}
+
+/*make tick icon and description be displayed on the same line*/
+.membershipOptions {
+	display: flex;
+}
+
+/*section for each membership card*/
+.membershipOptionContainer {
+	width: 25%;
+	padding: 1.25rem;
+}
+
+/*add custom colors for less recommended memberships*/
+#basicMembership, #eliteMembership {
+	background-color: #373C42;
+	height: 55rem;
+}
+
+/*make most recommended membership move up (to stand out)*/
+#premiumMembership {
+	margin-top: -2.5rem;
+}
+
+/*set custom bg & font color for recommended memberhsip*/
+#premiumMembership {
+	background-color: #D6FF33;
+	color: black;
+}
+
+#premiumMembership .optionFeatures {
+	color: black;
+}
+
+#premiumMembership .mdi-check-circle-outline {
+	color: #3F4D08;
+}
+
+.mdi-check-circle-outline {
+	color: #D6FF33;
+	margin: 0;
+	padding-right: 0.75rem;
+}
+
+.planName {
+	font: 2rem 'Bebas Neue', serif;
+}
+
+.optionFeatures {
+	color: white;
+	margin: 0;
+	padding-bottom: 1rem;
+}
+
+#membershipIcon1, #membershipIcon2, #membershipIcon3 {
+	font-size: 4rem;
+	margin: 0;
+}
+
+.membershipPrice {
+	margin: 0;
+	margin-bottom: 2.5rem;
+}
+
+#premiumMembership .membershipPrice {
+	color: black;
+}
+
+#membershipIcon2 {
+	color: black;
+}
+
+.membershipMoreBtn {
+	border-radius: 0rem;
+	background-color: white;
+	border-width: 0;
+	width: 13rem;
+	margin-top: 1rem;
+	padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.membershipHeaderDesc {
+	margin-top: 2.5rem;
+	margin-bottom: 0;
+}
+
+.membershipSubheaderDesc {
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+
+.references {
+	margin-left: 7rem;
+}
+
+.references, .references a {
+	font-size: medium;
+}
+
+/*section making the table of classes a flex item, and centering it vertically & horizontally*/
+#fitnessClassesContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+	overflow-x:auto;
+}
+
+/*adding custom styling for the table of classes*/
+#fitnessClassesTable table, #fitnessClassesTable th, #fitnessClassesTable td {
+	padding: 0.75rem;
+	text-align: center;
+	font-size: 1rem;
+	border-collapse: collapse;
+}
+
+#fitnessClassesTable td {
+	background-color: #ABCC29;
+	color: black;
+}
+
+#fitnessClassesTable th {
+	background-color: #36400D;
+	font-weight: bold;
+}
+
+.membershipImg {
+	width: 30rem;
+	margin-bottom: 0;
+}
+
+/*positioning the image*/
+#basicImgContainer {
+	margin-top: 5rem;
+}
+
+/*positioning the image*/
+#premiumImgContainer {
+	margin: 6rem 5rem 11rem 2rem;
+}
+
+/*make the image, headers, & 150 word desc be on same line (display side by side), vertically centered*/
+.topDesc {
+	width: 60%;
+	margin-left: 7rem;
+	margin-top: 3rem;
+}
+
+/*for premium & elite, because there are 5 optional features each*/
+/*make the membership options be flex items (display side by side on same line)*/
+.membershipSubcontainer1, .membershipSubcontainer2 {
+	display: flex;
+	margin: 0 3.25rem 0 7rem;
+}
+
+.featureDesc {
+	text-align: justify;
+}
+
+/*add spacing between the text and the right side of window*/
+.descContainer {
+	padding-right: 5rem;
+}
+
+/*add spacing between the text and the left side of window*/
+#premiumDescContainer {
+	padding-left: 5rem;
+}
+
+/*section containing a nested section with the nutritional coaching & body composition img*/
+/*make them flex items so they can be centered*/
+.featureImgSect {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*section for the overlay to be applied*/
+.featureImgContainer {
+	position: relative; /*to be the ancestor element that overlay is positioned relative to*/
+	width: 18rem;
+}
+
+/*styling for the nutritional coaching & body composition img*/
+.featureImg {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+#bodyImg {
+	margin-bottom: 1rem;
+}
+
+.optionalHeader {
+	font: 2.5rem 'Bebas Neue', serif;
+	margin: 4rem 0 0 7rem;
+}
+
+.notice {
+	font-size: medium;
+	font-style: italic;
+	margin: 0 0 2.5rem 7rem;
+}
+
+/*center the 2 options sections as there are only 2 big sections instead of 3 small sections (membershipSubcontainer1)*/
+.membershipSubcontainer2 {
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+/*styling for section of each optional feature, make it 25 rem (approx 25%)*/
+.featuresContainer {
+	width: 25rem;
+	background-color: #678006; /*#DBFF4D*/
+	margin-right: 1.5rem;
+	border-radius: 1rem;
+	padding-right: 0.3rem;
+}
+
+/*custom styling for the alternating color pattern of the featuresContainer*/
+#grey1, #grey2, #grey3, #grey4, #grey5 {
+	background-color: #373C42;
+}
+
+.featuresContainer li {
+	color: white;
+}
+
+.featureName {
+	font: 1.75rem 'Bebas Neue', serif;
+	padding: 2rem 0 0 0rem;
+	margin: 0 0 -0.25rem 0;
+	color: white;
+	text-align: center;
+}
+
+#classBasicFeat {
+	background-color: #373C42;
+	margin: 3rem 4.75rem 0 12rem;
+	border-radius: 1rem;
+	padding-bottom: 2rem;
+	width: 70%;
+}
+
+/*style the whole section containing all the trainer profiles*/
+.trainersProfiles {
+	background-color: #678006;
+	margin: 4rem 5rem 0 5rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+/*display each of the 2 trainers profiles on the same line (flex item)*/
+.trainers {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+}
+
+/*display the trainer's image section and the trainer's information section side by side (flex item)*/
+.trainersContainer {
+	display: flex;
+	margin: 0 0rem 4rem 0;
+	border-radius: 2rem;
+	padding: 1rem;
+	background-color: #373C42;
+}
+
+/*remove default margin from h4 in trainersProfiles*/
+.trainersProfiles h4 {
+	margin: 0;
+}
+
+.trainerImg {
+	border-radius: 10rem;
+	width: 85%;
+	height: 13.5rem;
+	margin-right: 2rem;
+}
+
+.trainerInfo {
+	width: 14rem;
+}
+
+#topTrainers {
+	margin-top: 2rem;
+}
+
+.memberInfo {
+	font-style: italic;
+}
+
+.role {
+	text-align: center;
+}
+
+.trainersProfiles .featureName {
+	font-size: 2rem;
+}
+
+.featureName a {
+	font: 1.5rem 'Bebas Neue', serif;;
+}
+
+#eliteContainer {
+	margin-top: -2rem;
+}
+
+#testimonials {
+	float: right;
+	width: 25%;
+	margin: 0.25rem;
+	padding: 0.25rem;
+	border: 1px solid white;
+	background-color: #555C5C;
+	border-top-left-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+}
+
+.mdi-format-quote-open, .mdi-format-quote-close {
+	font: 3rem 'Bebas Neue', serif;
+	color: #D6FF33;
+}
+
+.mdi-format-quote-close {
+	text-align: right;
+}
+
+.testimonial {
+	font: 1.3rem 'Bebas Neue', serif;
+}
+
+aside p {
+	margin: 0;
+}
+
+aside blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#testimonialHeader {
+	font: 2.5rem 'Bebas Neue', serif;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.productTypeContainer {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.productDyn {
+	display: flex;
+	width: 10rem;
+	background-color: #373C42;
+	padding: 0.75rem;
+	border-radius: 1rem;
+	justify-content: center;
+}
+
+.productTypeContainer input[type = "radio"] {
+	display: none;
+}
+
+.productTypeContainer input[type = "radio"]:checked + label {
+	background-color: #809c0d;
+}
+
+.productTypeContainer input[type = "radio"]:hover + label  {
+	background-color: #809c0d;
+	cursor: pointer;
+}
+
+.queryTypeContainer {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.queries {
+	display: flex;
+	width: 12rem;
+	background-color: #373C42;
+	padding: 0.75rem;
+	border-radius: 1rem;
+	justify-content: center;
+	color: white;
+	border-width: 0;
+}
+
+.updateBtn {
+	width: 5rem;
+	background-color: #373C42;
+	padding: 0.75rem;
+	border-radius: 1rem;
+	justify-content: center;
+	color: white;
+	border-width: 0;
+	margin: 0;
+}
+
+.updateBtn:hover, .queryTypeContainer input[type = "submit"]:hover  {
+	background-color: #647a0a;
+	cursor: pointer;
+}
+
+/* Enquiry page */
+
+.enquiryContainer {
+	position: relative; /*to make formHeader be positioned relative to it*/
+	width: 75%;
+	margin: auto; /*automatically horizontally center section*/
+	padding: 0rem 2rem 2rem 2rem;
+	background-color: #C1E62E; /*#C1E62E #D6FF33 #0056BF #003980*/ 
+	border: 0.05rem solid white; /* width style color */
+	border-radius: 1rem;
+	margin-top: 3%;
+	box-shadow: 2px 2px 10px grey;
+	color: white;
+}
+
+#formHeader {
+	position: absolute; /*position form header relative to enquiryContainer (positioned ancestor)*/
+	font-weight:bold;
+	z-index: 2; /*to make formHeader appear above the form (higher z-index value)*/
+	top: 0;
+	left: 0;
+	margin-left: 5%;
+	padding-top: 1rem;
+	font-size: 3rem;
+	color:#0E0F0F; /*#FFA500*/
+}
+
+#enquiryForm {
+	z-index: 1; /*to make formHeader appear above it (lower z-index value)*/
+	margin-top: 20%;
+}
+
+form fieldset {
+	border-radius: 2rem;
+	border-width: 0.1rem;
+	border-color: black;
+	padding: 1rem 2.5rem 1rem 2.5rem;
+}
+
+.topFieldset {
+	float: left; /*makes it so these sections will flow to the left*/
+}
+
+.topFieldset {
+	width: 100%;
+}
+
+#firstFieldset {
+	margin-left: -4.5rem;
+	width: 140%;
+}
+
+#secondFieldset {
+	width: 110%;
+	margin-left: -0.9rem;
+}
+
+#contactSect {
+	margin-left: -1rem;
+}
+
+#topContainer {
+	margin-top: -2.75rem;
+	display: flex; /*make the contact and address section be flex items*/
+	justify-content: space-around; /*space them equally in the topContainer*/
+	gap: 0rem;
+}
+
+form input[type="text"], input[type="email"] {
+	width: 100%;
+}
+
+form legend {
+	color: black;
+	font-size: 2rem;
+	font-family: 'Bebas Neue', serif;
+}
+
+form label {
+	color: black;
+	display: inline-block; /*make the labels for inputs like a block, also adds some spacing between input*/
+	padding-bottom: 0.35rem;
+}
+
+#enquiryFieldset, #orderFieldset {
+	width: 52.25rem;
+}
+
+#enquirySect, #orderSect {
+	padding-top: 3.5rem;
+	margin-left: 1.5rem;
+}
+
+.unofficialLabel {
+	color: #0E0F0F;
+	margin: 0px;
+	padding: 0px;
+	/*font-weight: bold;*/
+}
+
+.radioAndCheck {
+	margin-top: 0.35rem;
+}
+
+#fixContact .radioAndCheck, #fix2 .radioAndCheck{
+	width: 45%;
+	margin: -0.1rem 0rem 0.5rem -0.25rem;
+}
+
+#fix2 .radioAndCheck input {
+	width: 20%;
+}
+
+#fix2 .radioAndCheck{
+	margin-bottom: 0rem;
+}
+
+#fixContact .radioAndCheck input, #fix2 .radioAndCheck input {
+	margin-left: -2rem;
+	margin-right: -2rem;
+	margin-bottom: 0;
+}
+
+#checkSect {
+	display: flex;
+	gap: 2rem;
+}
+
+/*add custom shadow and input fill colors to match color scheme of website*/
+input[type = "checkbox"]:checked {
+	accent-color: #3F4D08;
+	box-shadow: 0 0 3pt 2pt gray;
+}
+
+input[type = "radio"]:checked {
+	accent-color: #3F4D08;
+	box-shadow: 0 0 6pt 2pt gray;
+}
+
+form input {
+	padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+	color: black;
+}
+
+form select {
+	padding-bottom: 0.1rem;
+	padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+input, textarea, select, option {
+	color: black;
+	background-color: white;
+}
+
+#submit {
+	font: 1.75rem 'Bebas Neue', serif;
+	color: white;
+	width: 30rem;
+	background-color: #3F4D08;
+	border-radius: 0.75rem;
+	border-width: 0;
+	margin-top: 2rem;
+	padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.queryContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.querySubmit {
+	font: 1.75rem 'Bebas Neue', serif;
+	color: white;
+	width: 30rem;
+	background-color: #3F4D08;
+	border-radius: 0.75rem;
+	border-width: 0;
+	margin-top: 2rem;
+	padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+#confirmSubmit {
+	margin: 0;
+}
+
+.querySubmit:hover {
+	background-color: #556905;
+	cursor: pointer;
+}
+
+/* maybe put some transition */
+#submit:hover {
+	background-color: #678006;
+	cursor: pointer;
+}
+
+#submitContainer {
+	text-align: center;
+}
+
+.grpClass {
+	display: flex;
+	gap: 1rem;
+}
+
+
+
+.fitClassLabel {
+	color: black;
+	margin-bottom: 0.35rem;
+	margin-top: -1.5rem;
+	/*font-weight: bold;*/
+}
+
+#quantity {
+	display:none;
+	width: 12rem;
+}
+/*
+.productFeaturesSect {
+	display: none;
+}
+*/
+
+/* About page */
+
+dl {
+	width: 35%;
+	overflow: hidden;
+	padding: 0;
+}
+
+dt, dd {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+dt {
+	width: 30%;
+}
+
+dd {
+	width: 70%;
+}
+
+/*make the definition list and my photo display side by side in their section*/
+#aboutContainer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -1rem;
+}
+
+#demoInfo {
+	text-align: justify;
+	width: 50%;
+	margin: -8rem 0 0 3.45rem;
+}
+
+#myPhoto {
+	float: right;
+	border-style: double;
+	border-color: #D6FF33;
+	padding: 20px;
+	width: 50%;
+	background-color: #3A450E;
+}
+
+/*make it a flex item so that the table in the section can be vertically & horizontally centered*/
+#timetableContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: auto;
+}
+
+#timetable table, #timetable th, #timetable td {
+	border: 1px solid white;
+	padding: 0.4rem;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+#timetable th {
+	background-color: #3A450E;
+	font-weight: bold;
+}
+
+#timetable td {
+	background-color: #ABCC29;
+	color: black;
+}
+
+#aboutHeader, .aboutSubheader {
+	font: 2.4rem 'Bebas Neue', serif;
+	margin-left: 3.55rem;
+	margin-bottom: 1.4rem;
+}
+
+#aboutHeader {
+	font-size: 3rem;
+	margin-left: 3.3rem;
+}
+
+#interestsContainer {
+	margin-left: 3.55rem;
+}
+
+.details {
+	text-align: justify;
+	width: 95%;
+}
+
+/*Enhancements page*/
+#enhancementHeader {
+	font: 2.25rem 'Bebas Neue', serif;
+}
+
+#enhancements {
+	margin-left: 3rem;
+}
+
+#enhancementH1 {
+	margin-left: 3rem;
+}
+
+#enhancements p {
+	text-align: justify;
+	margin-right: 3rem;
+}
+
+/* Payment page */
+
+#ccTypeSect {
+	display: flex;
+	gap: 1.25rem;
+}
+
+.ccType {
+	border: 1.5px solid #738040;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	width: auto;
+	padding: 0.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.2rem;
+}
+
+#fix3 .ccTypeSect {
+	gap:0;
+	width: 20%;;
+}
+
+#fix3 .ccType {
+	width: 100%;
+}
+
+#paymentLabel {
+	color: black;
+	margin-bottom: 0.4rem;
+}
+
+.ccType p {
+	margin: 0;
+	color: black;
+	font-size: 0.9rem;
+}
+
+.ccIcon {
+	width: 30%;
+	height: 40%;
+}
+
+label[for = "amex"] {
+	width: 108%;
+}
+
+#fix3 label[for = "amex"] {
+	width: 90%;
+	padding-bottom: 0.75rem;
+}
+
+label[for = "amex"] .ccIcon {
+	width: 19%;
+}
+
+label[for = "visa"] .ccIcon {
+	width: 26%;
+}
+
+#fix3 label[for = "visa"] .ccIcon {
+	width: 20%;
+}
+
+#fix3 label[for = "amex"] .ccIcon {
+	width: 16.5%;
+}
+
+#fix3 label[for = "mastercard"] .ccIcon {
+	width: 22%;
+}
+
+.contactAddrSect, .orderSummarySect, .paymentSect {
+	background-color: #C1E62E;
+	padding: 2rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	border-radius: 1rem;
+	box-shadow: 2px 2px 10px #92B312;
+}
+
+.managerForm {
+	background-color: #6B8019; /*#92B312 #6B8019*/
+	width: 80%;
+	margin-top: 1rem;
+	margin-left: 5.5rem;
+	border-radius: 1rem;
+	padding: 3rem;
+	padding-bottom: 4rem;
+}
+
+.managerForm input[type="text"] {
+	width: 98%;
+}
+
+.managerForm input[type="date"] {
+	width: 30rem;
+}
+
+.managerForm select {
+	width: 30rem;
+	margin-bottom: 1rem;
+}
+
+.managerHeader {
+	margin-top: -1rem;
+	margin-left: 10.5rem;
+}
+
+.custOrdersSect {
+	background-color: #C1E62E;
+	padding: 2.5rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	border-radius: 1rem;
+	box-shadow: 2px 2px 10px #92B312;
+}
+
+.queryHeader {
+	font-size: 2rem;
+	margin-top: 0;
+}
+
+.registerHeader {
+	font-size: 2.25rem;
+	text-align: center;
+}
+
+.contactAddrSect {
+	width: 25%;
+	margin-left: 5rem;
+}
+
+#fix .contactAddrSect {
+	width: 50%;
+	margin-left: 3.5rem;
+}
+
+.contactAddrSect p:not(.confirmLabel), .orderSummarySect p, .orderSummarySect td {
+	color:black;
+}
+
+.contactAddrSect h1, .orderSummarySect h1, .paymentSect h1 {
+	color: #36400D;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.orderSummarySect, .paymentSect {
+	width: 40%;
+}
+
+#fix2.orderSummarySect, #fix3.paymentSect {
+	margin-left: 3.5rem;
+	width: 83%;
+}
+
+#fix2 .grpClass input {
+	margin:0;
+	margin-left: -2rem;
+	margin-right: 0rem;
+}
+
+#fix2 .grpClass label {
+	font-size: 1rem;
+	margin:0;
+	margin-left: 2rem;
+	margin-top: -1rem;
+}
+
+#fix2 .grpClass .unofficialLabel {
+	margin-bottom: 0.5rem;
+}
+
+.classType {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+#fixOrderForm input[type="checkbox"] {
+	margin: 0;
+	margin-right: -2rem;
+	margin-left: -2rem;
+}
+
+.contactAddrSect p:not(.confirmLabel) {
+	margin-top: 0.25rem;
+	margin-bottom: 1rem;
+}
+
+.confirmLabel, #payment_product {
+	font: 1.5rem 'Bebas Neue', serif;
+	margin: 0;
+	color:#6B8019;
+}
+
+#payment_product {
+	font-size: 1.75rem;
+	margin-bottom: 0.75rem;
+}
+
+.confirmOrderSect{
+	display: flex;
+	gap: 6rem;
+}
+
+#fix.confirmOrderSect {
+	display: flex;
+	gap: 4rem;
+}
+
+.orderSummarySect [id^="payment_"]:not(#payment_product) {
+	text-align: right;
+}
+
+.orderSummarySect table {
+	width: 27rem;
+	border-collapse: collapse;
+}
+
+#paymentForm input, #fixOrderForm input {
+	width: 50%;
+	margin-bottom: 1rem;
+}
+
+#fixOrderForm input[type="text"] {
+	width: 90%;
+	margin-bottom: 1rem;
+}
+
+label[for = "ccName"], label[for = "ccNum"], label[for = "expDate"], label[for = "cvv"] {
+	margin-bottom: 0rem;
+}
+
+#label_cost, #payment_cost {
+	font-weight: bold;
+}
+
+.paymentSect input[type = "radio"] {
+	display: none;
+}
+
+.paymentSect input[type = "radio"]:checked + .ccType {
+	background-color: #809c0d;
+}
+
+.paymentSect input[type = "radio"]:hover + .ccType {
+	background-color: #809c0d;
+}
+
+#paymentForm, #fixOrderForm {
+	background-color: #6B8019; /*#92B312 #6B8019*/
+	width: 90%;
+	margin-top: 1rem;
+	margin-left: 4.5rem;
+	border-radius: 1rem;
+}
+
+#checkoutSect {
+	margin-top: 3.25rem;
+	width: 80%;
+	justify-content: center;
+	display: flex;
+	gap: 2rem;
+	margin-left: 7rem;
+}
+
+#checkOut {
+	font: 1.75rem 'Bebas Neue', serif;
+	color: white;
+	width: 25rem;
+	background-color: #3F4D08;
+	border-radius: 0.75rem;
+	border-width: 0;
+	padding: 0.75rem;
+}
+
+#checkOut:hover {
+	cursor: pointer;
+	background-color: #9bb62f;
+}
+
+#cancelBtn {
+	cursor: pointer;
+	color: black;
+	width: 45%;
+	padding: 0rem;
+	height: 3.85rem;
+	border-radius: 0.75rem;
+	background-color: #6B8019;
+	border: 2px solid #36400D;
+	font: 1.75rem 'Bebas Neue', serif;
+	color: white;
+}
+
+.confirmCancel {
+	cursor: pointer;
+	color: black;
+	width: 45%;
+	padding: 0rem;
+	height: 3.85rem;
+	border-radius: 0.75rem;
+	background-color: #6B8019;
+	border: 2px solid #36400D;
+	font: 1.75rem 'Bebas Neue', serif;
+	color: white;
+}
+
+.confirmCancel:hover {
+	background-color: #9bb62f;
+}
+
+.confirmContainer {
+	display: flex;
+	gap: 2rem;
+}
+
+#confirmCancelHeader {
+	margin: 0;
+	margin-bottom: 2rem;
+	color: black;
+}
+
+#cancelBtn:hover {
+	background-color: #9bb62f;
+}
+
+#timer {
+	font: 1.75rem 'Bebas Neue', serif;
+	text-align: center;
+	margin-right: 4.25rem;
+	background-color: #36400D;
+	border-radius: 0.5rem;
+	padding: 0.25rem;
+	width: 10rem;
+}
+
+#timerSect {
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	padding: 0;
+	margin: 0;
+}
+
+p.wrong2 {
+	font-weight: bold;
+	margin: 0rem;
+	margin-top: -0.5rem;
+	color: red;
+	font-size: 1.25rem;
+	margin-left: 8.25rem;
+}
+
+p.okQuery {
+	font-weight: bold;
+	margin: 0rem;
+	margin-top: -0.5rem;
+	color: green;
+	font-size: 1.25rem;
+	margin-left: 8.25rem;
+}
+
+/*fix_order.php*/
+.contactAddrSect p.wrong, .orderSummarySect p.wrong, .paymentSect p.wrong, #registrationForm p.wrong {
+	font-weight: bold;
+	margin: 0rem;
+	margin-top: -0.5rem;
+	color: #b10d0d;
+	font-size: 0.95rem;
+}
+
+.ok {
+	margin-bottom: 1rem;
+}
+
+.contactAddrSect select {
+	margin-bottom:1rem;
+}
+
+.error {
+	border: 2px solid red; /*blue*/
+}
+
+#fix2 input[type="text"] {
+	width: 19%;
+	margin-bottom: 0;
+}
+
+.orderSummarySect p.wrong,.paymentSect p.wrong {
+	margin-top: 0.5rem;
+}
+
+#fix2 .radioAndCheck {
+	margin-bottom: -0.4rem;
+}
+
+.changeProd {
+	width: 10%;
+	font-size: medium;
+	color: white;
+	background-color: #6B8019;;
+	border-radius: 0.75rem;
+	border-width: 0;
+	padding: 0.45rem;
+}
+
+.changeProd:hover {
+	cursor: pointer;
+	background-color: #9bb62f;
+}
+
+.changeProdSect {
+	display: flex;
+	width: 62%;
+	margin-bottom: -2.85rem;
+}
+
+.changeProdSect#basicBtn {
+	width: 57%;
+}
+
+.changeProdSect#eliteBtn {
+	width: 56%;
+}
+
+.orderSummarySect p.confirmLabel {
+	font-size: 1.75rem;
+	width: 70%;
+}
+
+#fix3 #ccTypeSect.error {
+	padding-top: 1rem;
+}
+
+#fix3 input[type="text"] {
+	width: 50%;
+	margin-bottom: 0rem;
+}
+
+.receiptHeader {
+	font-size: 2.25rem;
+}
+
+.receiptTitle {
+	margin-bottom: -0.5rem;
+}
+
+.receiptTable {
+	margin-top: -1.5rem;
+	width: 95%;
+}
+
+.receiptTable tr, .receiptTable td {
+	border: 2px solid white;
+	border-collapse: collapse;
+	padding: 0.5rem;
+}
+
+.receiptTable .receiptLabel {
+	width: 20%;
+}
+
+.receiptLabel {
+	font-weight: bold;
+}
+
+.receiptSect {
+	margin-left: 2rem;
+}
+
+.receiptTotal {
+	margin-top: -1rem;
+	width: 95%;
+	display: flex;
+	justify-content: right;
+}
+
+.receiptTotal h2 {
+	background-color: #36400D;
+	padding: 1rem;
+}
+
+.receiptTableH {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+.receiptCosts {
+	font-weight: bold;
+	text-align: right;
+	font-size: 1.25rem;
+}
+
+.hideSubmit {
+	display: none;
+}
+
+.queryTable {
+	width: 85%;
+	margin-left: 4rem;
+}
+
+.queryTable tr, .queryTable td, .queryTable th {
+	border: 1px solid white;
+}
+
+.queryTable td {
+	padding: 0.75rem;
+	justify-content:end;
+}
+
+.queryTable td {
+	font-size: 1rem;
+}
+
+.queryTable th {
+	font-weight: bold;
+	padding: 0.3rem;
+}
+
+.action {
+	border-width: 0;
+}
+
+.queryTable th.action, .queryTable td.action {
+	border-width: 0;
+}
+
+.popularProd {
+	margin-left: 10.5rem;
+}
